@@ -1,9 +1,3 @@
-Olá\! Claro, posso te ajudar a formatar esse texto em um arquivo **README** claro e bem organizado.
-
-O arquivo README.md (markdown) é essencial para descrever seu projeto e ajudar outros desenvolvedores a entendê-lo e executá-lo. Vou estruturar o conteúdo que você forneceu usando títulos, subtítulos, listas e blocos de código para facilitar a leitura.
-
------
-
 ## 💰 Sistema de Controle Financeiro Empresarial
 
 API REST para gerenciamento de receitas e despesas, categorização de transações e geração de relatórios básicos. Conectada ao SQL Server e pronta para Docker.
