@@ -1,0 +1,10 @@
+bin/
+obj/
+.vscode/
+.idea/
+.git/
+*.user
+*.suo
+*.log
+*.md
+.env

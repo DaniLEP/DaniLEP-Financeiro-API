@@ -1,0 +1,25 @@
+services:
+  financeiro-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: financeiro-db
+    environment:
+      SA_PASSWORD: "SenhaForte123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "14330:1433"
+    networks:
+      - financeiro-network
+
+  financeiro-api:
+    build: ./FinanceiroApi
+    container_name: financeiro-api
+    ports:
+      - "5134:8080" # 5134 no host -> 8080 no container
+    depends_on:
+      - financeiro-db
+    networks:
+      - financeiro-network
+
+networks:
+  financeiro-network:
+    driver: bridge
